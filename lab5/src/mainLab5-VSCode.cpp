@@ -37,16 +37,16 @@ int main()
 
 	// Arrays of pointers to structures 
 	struct TestStruct* List[] = { &a, &b, c, &b, c, &a, &b, &a };   // 3 a's, 2 c's, 3 b's. (So 5 out of 8 are same - we should print either the location of the a or the location of the c).
-	struct TestStruct *List2[] = { &b, &a, c };					  // 2 out of 3 are the same since a and c are identical
-	struct TestStruct *List3[] = { &b, &a, &d };					  // all different
-	struct TestStruct *List4[] = { &b, &a, &d, c };				  // even # of elements, two are identical
+	struct TestStruct* List2[] = { &b, &a, c };					  // 2 out of 3 are the same since a and c are identical
+	struct TestStruct* List3[] = { &b, &a, &d };					  // all different
+	struct TestStruct* List4[] = { &b, &a, &d, c };				  // even # of elements, two are identical
 	int		i;
 
 	// Variables
 	int w = 231, y = 230, z = 231;
 
 	// Array of pointers to variables
-	int *x[] = { &w, &y, &z };
+	int* x[] = { &w, &y, &z };
 
 	// Test the function 
 	/****************************************************************************************************************************************** */
